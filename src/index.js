@@ -1,15 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import CMS from "netlify-cms-app";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+import reportWebVitals from "./reportWebVitals";
+import config from "./config";
+import ListWidget from "./widget-list";
+import IconWidget from "./widget-icon";
+
+CMS.init({ config });
+CMS.registerWidget(ListWidget.Widget());
+CMS.registerWidget(IconWidget.Widget());
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
