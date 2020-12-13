@@ -5,7 +5,7 @@ import { List } from "immutable";
 import { WidgetPreviewContainer } from "netlify-cms-ui-default";
 
 const StyledImage = styled(({ src }) => (
-  <img src={src || ""} role="presentation" />
+  <img src={src || ""} alt="Selected category icon" />
 ))`
   display: block;
   max-width: 100px;
