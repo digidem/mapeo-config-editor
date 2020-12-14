@@ -1,7 +1,7 @@
 const config = {
   backend: {
     name: "github",
-    repo: "gmaclennan/mapeo-default-config",
+    repo: "gmaclennan/mapeo-default-config-test",
     branch: "master",
     use_graphql: true,
   },
