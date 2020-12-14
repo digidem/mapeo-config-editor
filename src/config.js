@@ -153,6 +153,38 @@ const config = {
         },
       ],
     },
+    {
+      label: "Configuration",
+      name: "config",
+      editor: { preview: false },
+      files: [
+        {
+          label: "Project metadata",
+          name: "metadata",
+          file: "metadata.json",
+          fields: [
+            {
+              label: "Project Key",
+              name: "projectKey",
+              widget: "string",
+              hint:
+                "A 32 byte (256-bit) random number encoded as a hex string (numbers 0-9 and lowercase letters a-f)",
+              pattern: [
+                "^[0-9a-f]{64}$",
+                "Must be 64 characters, numbers 0-9 and lowercase letters a-f",
+              ],
+            },
+            {
+              label: "Project Name",
+              name: "name",
+              widget: "string",
+              hint:
+                "A human-readable name for this project (may include spaces and accents)",
+            },
+          ],
+        },
+      ],
+    },
   ],
 };
 
