@@ -2,6 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Configuring Netlify
+
+First you'll need to create your own fork of this project. It's a good naming convention to name the repo with the name of the territory where the config will be used. Ex.: `mapeo-config-kalunga`
+
+Then modify the `src/config.js` file with your own fork of this project.
+
 ## Available Scripts
 
 In the project directory, you can run:
