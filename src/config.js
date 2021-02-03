@@ -70,6 +70,19 @@ const config = {
             "Comma-separated list of words that the user might use to search for this category",
         },
         {
+          label: "Tags",
+          name: "tags",
+          widget: "object",
+          fields: [
+            {
+              label: "Type",
+              name: "type",
+              widget: "string",
+            },
+          ],
+          hint: "Word that the user might use to tag this category",
+        },
+        {
           label: "Sort order",
           name: "sort",
           widget: "number",
