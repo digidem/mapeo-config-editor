@@ -1,3 +1,4 @@
+import "dotenv";
 import CMS from "netlify-cms-app";
 
 import reportWebVitals from "./reportWebVitals";
